@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+<body>
+  <div class="centralDiv">
+    <section class="section1">
+      <div id="divDay" class="divDate">
+        <p>Day</p>
+        <input id="inputDay" class="inputs" type="text" maxlength="2" placeholder="">
+        <p id="errorD"></p>
+      </div>
+      <div id="divMonth" class="divDate">
+        <p>Month</p>
+        <input id="inputMonth" class="inputs" type="text" maxlength="2" placeholder="">
+        <p id="errorM"></p>
+      </div>
+      <div id="divYear" class="divDate">
+        <p>Year</p>
+        <input id="inputYear" class="inputs" type="text" maxlength="4" placeholder="">
+        <p id="errorY"></p>
+      </div>
+    </section>
+    <button id="submit" type="submit"><img src="icon-arrow.svg" alt="Start calculation"></button>
+    <section class="section2">
+      <div class="divResult">
+        <p id="pYears">_ _ </p>
+        <p> years</p>
+      </div>
+      <div class="divResult">
+        <p id="pMonths">_ _ </p>
+        <p> months</p>
+      </div>
+      <div class="divResult">
+        <p id="pDays">_ _ </p>
+        <p> days</p>
+      </div>
+    </section>
+  </div>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Guilherme Monteiro</a>.
+  </div>-->
+</body>
+<script src="script.js"></script>
+
+</html>

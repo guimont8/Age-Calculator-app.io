@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.centralDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3%;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+    margin: 0 15% 0 15%;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 0 5% 0;
+    border-bottom: 1px solid;
+}
+
+.divDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    width: 40%;
+    padding: 5%;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.089);
+    border-radius: 12px;
+    outline-style: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+button {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    border-radius: 50%;
+    padding: 3%;
+    background-color: hsl(259, 100%, 65%);
+    border: 0px solid;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.section2 {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 5%;
+    width:100%
+}
+
+.divResult {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 600%;
+    width:100%;
+}
+.divResult p{
+    margin:2% 0 2% 0;
+}
+#pYears {
+    color: hsl(259, 100%, 65%);
+    margin-top: 0;
+   
+}
+
+#pMonths {
+    color: hsl(259, 100%, 65%);
+   
+}
+
+#pDays {
+    color: hsl(259, 100%, 65%);
+    
+}
+@media screen and (max-width: 768px){
+    .centralDiv {
+        width:90%;
+        margin: 0 2% 0 2%;
+    }
+    #inputYear{
+        width:65%;
+    }
+    .section1{
+        padding-bottom: 15%;
+    }
+    button{
+        align-self: center;
+        transform: translateY(-45%);
+        padding: 5%;
+    }
+
+    .divResult {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 12vw;
+        width:100%;
+    }  
+}
